@@ -1,0 +1,53 @@
+nav#NaviationSideDrawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 95vh;
+    z-index: 3;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    transform: translateX(200%);
+    transition: all 0.35s ease-out;
+    margin: 24px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav#NaviationSideDrawer.openNavbar{
+    transform: translateX(0);
+    transition: all 0.4s ease-in;
+}
+nav#NaviationSideDrawer .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 32px;
+}
+nav#NaviationSideDrawer ul {
+    text-align: center;
+    font-size: 24px;
+
+}
+nav#NaviationSideDrawer ul li {
+    padding: 16px;
+    margin: 24px 0;
+}
+
+nav#NaviationSideDrawer .close_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 24px;
+    margin: 24px 36px;
+    color: var(--white-color);
+    background: transparent;
+}
+nav#NaviationSideDrawer ul li:hover,
+nav#NaviationSideDrawer .close_btn:hover {
+    color: var(--primary-color);
+    transition: all 0.35s ease-in;
+}

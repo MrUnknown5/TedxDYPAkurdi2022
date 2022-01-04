@@ -1,0 +1,212 @@
+/* ----- Landing ----- */
+
+
+.Home_Landing {
+    position: relative;
+}
+
+.Home_Landing .landing_background {
+    z-index: 1;
+    background-image: url('../../assets/images/tedx_landing_background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 110vh;
+    width: 100vw;
+}
+
+.Home_Landing .landing_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 110vh;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 2;
+}
+.Home_Landing .landing_container .landing_container_image {
+    background-image: url('../../assets/images/tedx_landing_image.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+}
+.Home_Landing .landing_container .landing_container_info {
+    padding: 16px 0;
+    color: var(--white-color);
+}
+.Home_Landing .landing_container .landing_container_info h1 {
+    font-size: 96px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 30px;
+    font-family: 'Acme', sans-serif;
+}
+.Home_Landing .landing_container .landing_container_info p {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Vujahday Script', cursive;
+}
+
+/* ----- Speaker ----- */
+
+
+
+
+
+/* ----- Banner ----- */
+
+
+.Home_Banner {
+    height: 60vh;
+    color: var(--white-color);
+    padding: 36px;
+    background-image: url('../../assets/images/banner_background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: drop-shadow(4px 4px 10px black);
+}
+.Home_Banner .banner_grid {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Home_Banner .banner_grid .banner_grid_image {
+    display: block;
+    background-image: url('../../assets/images/banner_x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+}
+.Home_Banner .banner_grid .banner_grid_quote {
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    padding: 0 54px;
+}
+
+
+/* ----- Sponsors ----- */
+/* ----- About ----- */
+
+
+.Home_About {
+    padding: 48px 0;
+}
+.Home_About h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.Home_About p {
+    max-width: 600px;
+    font-size: 24px;
+    margin: 60px auto;
+    padding: 36px auto;
+    color: var(--white-color);
+}
+.Home_About .about_image {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 36px auto;
+    height: 300px;
+    width: 300px;
+}
+.Home_About .about_image_about_ted {
+    background-image: url('../../assets/images/banner_x.png');
+}
+.Home_About .about_image_about_tedx {
+    background-image: url('../../assets/images/banner_x.png');
+}
+.Home_About .about_image_univocal {
+    background-image: url('../../assets/images/banner_x.png');
+}
+
+
+/* ----- Venue ----- */
+
+
+.Home_Venue {
+    height: 60vh;
+    width: 100%;    
+    padding: 36px;
+    color: var(--white-color);
+
+    background-image: url('../../assets/images/venue_background.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+}
+.Home_Venue::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /*higher the z-index, closer it is to you*/
+    background: rgba(0, 0, 0, 0.5);
+}
+.Home_Venue .venue_grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Home_Venue .venue_grid .venue_grid_info h1 {
+    font-size: 60px;
+    color: var(--primary-color);
+    padding-bottom: 24px;
+}
+.Home_Venue .venue_grid .venue_grid_info p {
+    font-size: 24px;
+    padding: 36px;
+}
+.Home_Venue .venue_grid .venue_grid_info .button_container {
+    text-align: center;
+    padding: 24px 0;
+}
+
+.Home_Venue .venue_grid .venue_grid_map_embedded,
+.Home_Venue .venue_grid .venue_grid_map_embedded iframe {
+    height: 300px;
+    width: 300px;
+    border: 0;
+    border-radius: 24px;
+}
+
+
+/* ----- Connect with us ----- */
