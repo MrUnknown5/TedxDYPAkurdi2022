@@ -17,7 +17,7 @@ const Header = () => {
                         <div className="header_logo"></div>
                     </Link>
                     <div className='header_buttons'>
-                        <button className="btn btn_primary">Grab a Ticket</button>
+                        <button className="btn btn_primary hide-720px">Grab a Ticket</button>
                         <button onClick={handleOpenNav} id='menu_icon' className='menu_icon'>
                             <i className="fa fa-bars"></i>
                         </button>

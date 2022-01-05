@@ -15,10 +15,10 @@ const Home = () => {
             <article id="Home_Landing" className="Home_Landing">
                 <div className="landing_background"></div>
                 <div className="landing_container">
-                        <div className='landing_container_image'></div>
-                        <div className='landing_container_info'>
-                            <h1>Univocal</h1>
-                            <p>Event Coming Soon...</p>
+                    <div className='landing_container_image'></div>
+                    <div className='landing_container_info'>
+                        <h1>Univocal</h1>
+                        <p>Event Coming Soon...</p>
                     </div>
                 </div>
             </article>

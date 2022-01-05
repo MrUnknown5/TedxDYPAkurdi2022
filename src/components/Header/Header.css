@@ -28,14 +28,32 @@ header .header_grid .header_logo {
     background-size: contain;
 }
 
-/*-------------------- Menu Toggle --------------------*/
+@media (max-width: 840px ) {
+    header {
+        width: 100vw;
+        margin: 0;
+        border-radius: 0px;
+    }
+    header .header_grid .header_logo {
+        width: 200px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 720px ) {
+    header .header_grid .header_logo {
+        width: 150px;
+        height: 23px;
+    }
+}
+
+/* -------------------- Menu Toggle -------------------- */
 
 header .header_grid .header_buttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 header .header_grid .header_buttons .menu_icon {
@@ -43,4 +61,23 @@ header .header_grid .header_buttons .menu_icon {
     color: var(--white-color);
     font-size: 30px;
     margin: auto 0 auto 24px;
+}
+
+@media (max-width: 840px ) {
+    header .header_grid .header_buttons .menu_icon {
+        font-size: 30px;
+        margin: auto 0 auto 18px;
+    }
+    .hide-720px{
+        display: none;
+    }
+}
+@media (max-width: 720px) {
+    header .header_grid .header_buttons .menu_icon {
+        font-size: 28px;
+        margin: auto 0 auto 18px;
+    }
+    .hide-720px{
+        display: none;
+    }
 }
