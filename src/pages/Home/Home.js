@@ -104,6 +104,7 @@ const Home = () => {
                     <div className="speakers_carousel_button speakers_carousel_button_right"><button onClick={() => handleCount(true)}><i className="fa fa-arrow-right" aria-hidden="true"></i></button></div>
                 </div>
             </article>
+            
             {/* <article className="Home_Speaker">
                 <div className="container">
                     <div className="speakers_grid">
