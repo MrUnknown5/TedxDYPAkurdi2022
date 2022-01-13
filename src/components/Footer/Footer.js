@@ -13,10 +13,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_social_media">
-                    <div><a href=""><i className="fa fa-instagram"></i></a></div>
-                    <div><a href=""><i className="fa fa-linkedin"></i></a></div>
-                    <div><a href=""><i className="fa fa-facebook"></i></a></div>
-                    <div><a href=""><i className="fa fa-youtube-play"></i></a></div>
+                    <div><a href="https://www.instagram.com/tedxdypakurdi/"><i className="fa fa-instagram"></i></a></div>
+                    <div><a href="https://www.linkedin.com/company/tedxdypakurdi/"><i className="fa fa-linkedin"></i></a></div>
+                    <div><a href="https://www.facebook.com/tedxdypakurdi/"><i className="fa fa-facebook"></i></a></div>
+                    <div><a href="https://www.youtube.com"><i className="fa fa-youtube-play"></i></a></div>
                 </div>
                 <div className="footer_info_grid">
                     <div className="footer_info_grid_contact_us">

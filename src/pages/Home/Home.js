@@ -55,13 +55,13 @@ const Home = () => {
         
     const handleCount = (direction) => {
         if(direction) {
-            if(count==4)
+            if(count===4)
                 setCount(0);
             else
                 setCount(count+1);
         }
         else {
-            if(count==0)
+            if(count===0)
                 setCount(4);
             else
                 setCount(count-1);
@@ -110,28 +110,6 @@ const Home = () => {
                     </div>
                 </div>
             </article>
-            
-            {/* <article className="Home_Speaker">
-                <div className="container">
-                    <div className="speakers_grid">
-                        <div className="speakers_grid_info">
-                            <h1>OUR SPEAKERS</h1>
-                        </div>
-                        <div className="speakers_grid_image" style={
-                            { 
-                                backgroundImage: `url(${imageAddress})`
-                            }
-                        }></div>
-                        <div className="speakers_grid_info">
-                            <h3>Topic of the talk</h3>
-                            <sub>By -  Speakers Name</sub>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dicta quibusdam a dolorem architecto incidunt cum suscipit voluptatem explicabo illo.</p>
-                        </div>
-                    </div>
-                    <div className="speakers_carousel_button speakers_carousel_button_left"><button><i className="fa fa-arrow-left" aria-hidden="true"></i></button></div>
-                    <div className="speakers_carousel_button speakers_carousel_button_right"><button><i className="fa fa-arrow-right" aria-hidden="true"></i></button></div>
-                </div>
-            </article> */}
 
             <article className="Home_Banner">
                 <div className="container">
