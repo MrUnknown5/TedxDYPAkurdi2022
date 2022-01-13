@@ -6,10 +6,15 @@ header {
     width: 95%;
     margin: 24px auto;
     padding: 24px 16px;
-    background-color: var(--dark-background-secondary);
     border-radius: 50px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
     z-index: 3;
+}
+
+header:hover,
+header.scrollingOn {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+    background-color: var(--dark-background-secondary);
+    transition: all 0.35s ease-in;
 }
 
 header .header_grid {

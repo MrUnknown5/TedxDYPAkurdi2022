@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import "./Header.css";
 
@@ -8,9 +8,18 @@ const Header = () => {
         let element = document.getElementById('NaviationSideDrawer');
         element.classList.add('openNavbar');
     }
+    
+    const [headerBackground, setHeaderBackground] = useState(false);
+    const handleHeaderBackground = () => {
+        if(window.scrollY >= 100)
+            setHeaderBackground(true); 
+        else
+            setHeaderBackground(false); 
+    }
+    window.addEventListener('scroll', handleHeaderBackground);
 
     return (
-        <header>
+        <header className={headerBackground?'scrollingOn':' '}>
             <div className="container">
                 <div className="header_grid">
                     <Link to="/">

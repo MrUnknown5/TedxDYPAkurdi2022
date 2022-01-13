@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import "./Home.css";
 import Header from "../../components/Header/Header";
@@ -10,22 +10,6 @@ import imageAddress3 from "../../assets/speakers/elon_musk.png";
 import imageAddress4 from "../../assets/speakers/elon_musk.png";
 import imageAddress5 from "../../assets/speakers/elon_musk.png";
 
-var count = 0;
-
-const handleCount = (direction) => {
-    console.log("Before update count =",count)
-    if(direction) {
-        count++;
-        if(count>4)
-            count = 0;
-    }
-    else {
-        count--;
-        if(count<0)
-            count = 4;
-    }
-    console.log("After update count =",count)
-}
 
 const speakersDB = [
     {
@@ -66,6 +50,24 @@ const speakersDB = [
 ];
 
 const Home = () => {
+
+    const [count, setCount] = useState(0);
+        
+    const handleCount = (direction) => {
+        if(direction) {
+            if(count==4)
+                setCount(0);
+            else
+                setCount(count+1);
+        }
+        else {
+            if(count==0)
+                setCount(4);
+            else
+                setCount(count-1);
+        }
+    }
+
     return (
         <React.Fragment>
             
@@ -100,8 +102,12 @@ const Home = () => {
                             <p>{speakersDB[count].synopsis}</p>
                         </div>
                     </div>
-                    <div className="speakers_carousel_button speakers_carousel_button_left"><button onClick={() => handleCount(false)}><i className="fa fa-arrow-left" aria-hidden="true"></i></button></div>
-                    <div className="speakers_carousel_button speakers_carousel_button_right"><button onClick={() => handleCount(true)}><i className="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+                    <div className="speakers_carousel_button speakers_carousel_button_left">
+                        <button onClick={() => handleCount(false)}><i className="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div className="speakers_carousel_button speakers_carousel_button_right">
+                        <button onClick={() => handleCount(true)}><i className="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
             </article>
             
