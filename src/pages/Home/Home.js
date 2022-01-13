@@ -4,6 +4,66 @@ import "./Home.css";
 import Header from "../../components/Header/Header";
 import Sidedrawer from '../../components/SideDrawer/SideDrawer';
 import Footer from "../../components/Footer/Footer";
+import imageAddress1 from "../../assets/speakers/elon_musk.png";
+import imageAddress2 from "../../assets/speakers/elon_musk.png";
+import imageAddress3 from "../../assets/speakers/elon_musk.png";
+import imageAddress4 from "../../assets/speakers/elon_musk.png";
+import imageAddress5 from "../../assets/speakers/elon_musk.png";
+
+var count = 0;
+
+const handleCount = (direction) => {
+    console.log("Before update count =",count)
+    if(direction) {
+        count++;
+        if(count>4)
+            count = 0;
+    }
+    else {
+        count--;
+        if(count<0)
+            count = 4;
+    }
+    console.log("After update count =",count)
+}
+
+const speakersDB = [
+    {
+        id: 1,
+        name: 'Speaker1',
+        image: imageAddress1,
+        topic: 'Topic of the talk 1',
+        synopsis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus at exercitationem aut quia! Distinctio, laboriosam corporis culpa vel accusamus commodi possimus officia error necessitatibus explicabo harum'
+    },
+    {
+        id: 2,
+        name: 'Speaker2',
+        image: imageAddress2,
+        topic: 'Topic of the talk 2',
+        synopsis: 'Obcaecati minima? Veniam doloribus impedit eligendi maiores quisquam qui ut, reprehenderit repellat nulla sapiente, necessitatibus corrupti dolore soluta? Fugiat, doloribus. Optio repellat tenetur qui provident'
+    },
+    {
+        id: 3,
+        name: 'Speaker3',
+        image: imageAddress3,
+        topic: 'Topic of the talk 3',
+        synopsis: 'Facilis reiciendis expedita consectetur exercitationem. Vel aliquid culpa quo consequatur voluptatem velit modi veniam quas doloremque distinctio tenetur voluptatibus similique aperiam quam ab id laboriosam.'
+    },
+    {
+        id: 4,
+        name: 'Speaker4',
+        image: imageAddress4,
+        topic: 'Topic of the talk 4',
+        synopsis: 'Ipsum recusandae inventore. Exercitationem, quidem. Autem provident quia voluptates nemo. Nobis facilis quis a eligendi perferendis magnam tempora aperiam, corrupti placeat possimus accusamus, error nisi'
+    },
+    {
+        id: 5,
+        name: 'Speaker5',
+        image: imageAddress5,
+        topic: 'Topic of the talk 5',
+        synopsis: 'Ab inventore quibusdam similique officia dolorum neque! Hic obcaecati, error quos id fugit soluta porro enim aliquid. Blanditiis et quasi ad illum exercitationem esse voluptates.'
+    }
+];
 
 const Home = () => {
     return (
@@ -25,27 +85,52 @@ const Home = () => {
 
             <article className="Home_Speaker">
                 <div className="container">
-                    
+                    <div className="speakers_grid">
+                        <div className="speakers_grid_info">
+                            <h1>OUR SPEAKERS</h1>
+                        </div>
+                        <div className="speakers_grid_image" style={
+                            { 
+                                backgroundImage: `url(${speakersDB[count].image})`
+                            }
+                        }></div>
+                        <div className="speakers_grid_info">
+                            <h3>{speakersDB[count].topic}</h3>
+                            <sub>By -  {speakersDB[count].name}</sub>
+                            <p>{speakersDB[count].synopsis}</p>
+                        </div>
+                    </div>
+                    <div className="speakers_carousel_button speakers_carousel_button_left"><button onClick={() => handleCount(false)}><i className="fa fa-arrow-left" aria-hidden="true"></i></button></div>
+                    <div className="speakers_carousel_button speakers_carousel_button_right"><button onClick={() => handleCount(true)}><i className="fa fa-arrow-right" aria-hidden="true"></i></button></div>
                 </div>
             </article>
+            {/* <article className="Home_Speaker">
+                <div className="container">
+                    <div className="speakers_grid">
+                        <div className="speakers_grid_info">
+                            <h1>OUR SPEAKERS</h1>
+                        </div>
+                        <div className="speakers_grid_image" style={
+                            { 
+                                backgroundImage: `url(${imageAddress})`
+                            }
+                        }></div>
+                        <div className="speakers_grid_info">
+                            <h3>Topic of the talk</h3>
+                            <sub>By -  Speakers Name</sub>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dicta quibusdam a dolorem architecto incidunt cum suscipit voluptatem explicabo illo.</p>
+                        </div>
+                    </div>
+                    <div className="speakers_carousel_button speakers_carousel_button_left"><button><i className="fa fa-arrow-left" aria-hidden="true"></i></button></div>
+                    <div className="speakers_carousel_button speakers_carousel_button_right"><button><i className="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+                </div>
+            </article> */}
 
             <article className="Home_Banner">
                 <div className="container">
                     <div className="banner_grid">
                         <div className="banner_grid_quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, eaque?</div>
                         <div className="banner_grid_image"></div>
-                    </div>
-                </div>
-            </article>
-
-            <article className="Home_Sponsors">
-                <div className="container">
-                    <div className="sponsors_grid">
-                        <div className="sponsors_grid_each sponsors_grid_1"></div>
-                        <div className="sponsors_grid_each sponsors_grid_2"></div>
-                        <div className="sponsors_grid_each sponsors_grid_3"></div>
-                        <div className="sponsors_grid_each sponsors_grid_4"></div>
-                        <div className="sponsors_grid_each sponsors_grid_5"></div>
                     </div>
                 </div>
             </article>
@@ -70,6 +155,19 @@ const Home = () => {
                 </div>
             </article>
 
+            <article className="Home_Sponsors">
+                <div className="container">
+                    <h1>OUR SPONSORS</h1>
+                    <div className="sponsors_grid autoplay">
+                        <div className="sponsors_grid_each sponsors_grid_1 font_facebook">facebook</div>
+                        <div className="sponsors_grid_each sponsors_grid_2 font_google">Google</div>
+                        <div className="sponsors_grid_each sponsors_grid_3 font_tesla">Tesla</div>
+                        <div className="sponsors_grid_each sponsors_grid_4 font_microsoft">Microsoft</div>
+                        <div className="sponsors_grid_each sponsors_grid_5 font_amazon">Amazon</div>
+                    </div>
+                </div>
+            </article>
+
             <article className="Home_Venue">
                 <div className="container">
                     <div className="venue_grid">
@@ -79,7 +177,7 @@ const Home = () => {
                             <div className="button_container"><button className="btn btn_primary">LOCATE</button></div>
                         </div>
                         <div className="venue_grid_map_embedded">
-                            <iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15121.631403099624!2d73.7512569!3d18.6456854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9ef588fffff%3A0xed7869959e7d6300!2sDr.%20D.Y.%20Patil%20Institute%20of%20Engineering%2C%20Management%20and%20Research!5e0!3m2!1sen!2sin!4v1641211077076!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15121.631403099624!2d73.7512569!3d18.6456854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9ef588fffff%3A0xed7869959e7d6300!2sDr.%20D.Y.%20Patil%20Institute%20of%20Engineering%2C%20Management%20and%20Research!5e0!3m2!1sen!2sin!4v1641211077076!5m2!1sen!2sin" allowFullScreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
