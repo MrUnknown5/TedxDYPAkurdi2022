@@ -92,6 +92,9 @@ footer .footer_info_grid .footer_info_grid_partenr_with_us {
     
     footer .footer_info_grid {
         grid-template-columns: 1fr;
+        justify-content: left;
+        justify-self: left;
+        justify-items: left;
     }
     footer .footer_info_grid h1 {
         text-align: center;
@@ -112,7 +115,8 @@ footer .footer_info_grid .footer_info_grid_partenr_with_us {
     }
     footer .footer_info_grid .footer_info_grid_contact_us,
     footer .footer_info_grid .footer_info_grid_partenr_with_us {
-        margin: 0 auto;
+        margin: 0;
+        width: 100%;
     }
 }
 

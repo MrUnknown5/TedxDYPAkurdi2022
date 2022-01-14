@@ -24,15 +24,15 @@ const Footer = () => {
                         <ul>
                             <li><a href="mailto:tedxdypakurdi@gmail.com"><i className="fa fa-envelope-o"></i> tedxdypakurdi@gmail.com</a></li>
                             <li><a href="https://goo.gl/maps/dCTEdHY9svPqbSSx6"><i className="fa fa-map-marker"></i> D. Y. Patil Educational Complex, Sector 29, Nigidi Pradhikaran, Akurdi, Pune 411044.</a></li>
-                            <li><a href="+919960304336"><i className="fa fa-phone"></i> Abhishek Sharma (Organiser)</a></li>
+                            <li><a href="tel:+919960304336"><i className="fa fa-phone"></i> Abhishek Sharma (Organiser)</a></li>
                         </ul>
                     </div>
                     <div className="footer_info_grid_partenr_with_us">
                         <h1>PARTNER WITH US</h1>
                         <ul>
-                            <li><a href="+919960304336"><i className="fa fa-phone"></i>  Abhishek Sharma (Organiser)</a></li>
-                            <li><a href="+918849407882"><i className="fa fa-phone"></i> Poojan Naik (Co-Organiser)</a></li>
-                            <li><a href="+918446135153"><i className="fa fa-phone"></i> Anagha Nair (Club Advisor)</a></li>
+                            <li><a href="tel:+919960304336"><i className="fa fa-phone"></i>  Abhishek Sharma (Organiser)</a></li>
+                            <li><a href="tel:+918849407882"><i className="fa fa-phone"></i> Poojan Naik (Co-Organiser)</a></li>
+                            <li><a href="tel:+918446135153"><i className="fa fa-phone"></i> Anagha Nair (Club Advisor)</a></li>
                         </ul>
                     </div>
                 </div>

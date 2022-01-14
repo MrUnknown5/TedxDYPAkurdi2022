@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 
 import "./Home.css";
 import Header from "../../components/Header/Header";
@@ -77,10 +78,12 @@ const Home = () => {
             <article id="Home_Landing" className="Home_Landing">
                 <div className="landing_background"></div>
                 <div className="landing_container">
-                    <div className='landing_container_image'></div>
-                    <div className='landing_container_info'>
+                    <div className='landing_container_image' data-aos="fade-left"></div>
+                    <div className='landing_container_info' data-aos="fade-right">
                         <h1>Univocal</h1>
-                        <p>Event Coming Soon...</p>
+                        <p>
+                            <ReactTypingEffect text={["Event Coming Soon", "Stay Tuned!"]}/>
+                        </p>
                     </div>
                 </div>
             </article>
