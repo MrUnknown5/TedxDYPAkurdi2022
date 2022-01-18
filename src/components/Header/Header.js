@@ -26,7 +26,7 @@ const Header = () => {
                         <div className="header_logo"></div>
                     </Link>
                     <div className='header_buttons'>
-                        <button href="https://razorpay.com/" className="btn btn_primary hide-720px">Grab a Ticket</button>
+                        <a href="https://razorpay.com/" className="btn btn_primary hide-720px">Grab a Ticket</a>
                         <button onClick={handleOpenNav} id='menu_icon' className='menu_icon'>
                             <i className="fa fa-bars"></i>
                         </button>

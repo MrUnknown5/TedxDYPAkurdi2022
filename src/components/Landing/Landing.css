@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+.Landing {
+    height: 100vh;
+    width: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* box-shadow: inset 6px 5px 10px #000000, inset -6px -5px 10px #000000; */
+}
+.Landing .landing_heading {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Arvo', serif;
+    color: var(--white-color);
+    z-index: 2;
+    opacity: 1;
+}
+/* @media (min-width: 480px) {
+    .Landing .landing_heading {
+        font-size: 36px;
+    }
+}
+@media (min-width: 560px) {
+    .Landing .landing_heading {
+        font-size: 36px;
+    }
+}
+@media (min-width: 640px) {
+    .Landing .landing_heading {
+        font-size: 36px;
+    }
+} */
+@media (min-width: 720px) {
+    .Landing .landing_heading {
+        font-size: 48px;
+    }
+}
+@media (min-width: 840px) {
+    .Landing .landing_heading {
+        font-size: 64px;
+    }
+}
+@media (min-width: 960px) {
+    .Landing .landing_heading {
+        font-size: 96px;
+    }
+}
+@media (min-width: 1080px) {
+    .Landing .landing_heading {
+        font-size: 128px;
+    }
+}
