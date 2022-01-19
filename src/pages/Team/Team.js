@@ -33,9 +33,9 @@ const Team = () => {
                                 <div className="team_card_template_lower">
                                     <div className="qr_code"></div>
                                     <div className="member_social_media">
-                                        <div><a href='#'><i className="fa fa-envelope-o"></i></a></div>
-                                        <div><a href='#'><i className="fa fa-instagram"></i></a></div>
-                                        <div><a href='#'><i className="fa fa-linkedin"></i></a></div>
+                                        <div><a href='www.google.com'><i className="fa fa-envelope-o"></i></a></div>
+                                        <div><a href='www.google.com'><i className="fa fa-instagram"></i></a></div>
+                                        <div><a href='www.google.com'><i className="fa fa-linkedin"></i></a></div>
                                     </div>
                                 </div>
                             </div>
