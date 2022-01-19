@@ -14,7 +14,6 @@ const Sidedrawer = () => {
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/speakers'>Speakers</Link></li>
-                <li><Link to='/sponsors'>Sponsors</Link></li>
                 <li><Link to='/archive'>Archive</Link></li>
                 <li><Link to='/team'>Our Team</Link></li>
                 <li><Link to='/terms-and-condition'>Terms and Condtions</Link></li>

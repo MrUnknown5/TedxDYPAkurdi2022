@@ -1,0 +1,111 @@
+.Team {
+    padding: 60px 0;
+    color: var(--white-color);
+}
+.Team section {
+    padding: 36px 0;
+    border-bottom: var(--border-color) 1px solid;
+}
+.Team section .section_heading{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding: 24px 0;
+}
+.Team section .team_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.Team section .team_flex .team_card_template {
+    width: 320px;
+    background-color: var(--dark-background-secondary);
+    border-radius: 24px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 29px 0px;
+}
+.Team section .team_flex .team_card_template .team_card_template_upper {
+    padding: 16px 16px 42px 16px;
+    border-radius: 24px 24px 0 0;
+}
+.Team section .team_flex .team_card_template .team_card_template_upper figure {
+    margin: 24px auto 0 auto;
+}
+.Team section .team_flex .team_card_template .team_card_template_upper figure,
+.Team section .team_flex .team_card_template .team_card_template_upper figure img {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+}
+.Team section .team_flex .team_card_template .team_card_template_upper .member_name {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 24px 0 8px 0;
+    text-align: center;
+    color: var(--white-color);
+}
+.Team section .team_flex .team_card_template .team_card_template_upper .member_position {
+    font-size: 18px;
+    text-align: center;
+    color: var(--white-color-secondary);
+}
+.Team section .team_flex .team_card_template .team_card_template_lower {
+    padding: 36px 0 30px 0;
+    background-color: var(--dark-background-tertiary);
+    border-radius: 0 0 24px 24px;
+}
+
+.Team section .team_flex .team_card_template .team_card_template_lower .member_social_media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-size: 24px;
+    color: var(--white-color);
+}
+.Team section .team_flex .team_card_template .team_card_template_lower .member_social_media .fa-envelope-o {
+    color: var(--white-color);
+}
+.Team section .team_flex .team_card_template .team_card_template_lower .member_social_media .fa-envelope-o:hover {
+    color: var(--primary-color);
+    transition: all 0.35s ease;
+}
+
+@media screen {
+    .Team section .section_heading{
+        font-size: 24px;
+    }
+    .Team section .team_flex .team_card_template {
+        width: 320px;
+        background-color: var(--dark-background-secondary);
+        border-radius: 24px;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_upper {
+        padding: 16px 16px 42px 16px;
+        border-radius: 24px 24px 0 0;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_upper figure {
+        margin: 24px auto 0 auto;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_upper figure,
+    .Team section .team_flex .team_card_template .team_card_template_upper figure img {
+        height: 240px;
+        width: 240px;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_upper .member_name {
+        font-size: 24px;
+        padding: 24px 0 8px 0;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_upper .member_position {
+        font-size: 18px;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_lower {
+        padding: 36px 0 30px 0;
+        border-radius: 0 0 24px 24px;
+    }
+    .Team section .team_flex .team_card_template .team_card_template_lower .member_social_media {
+        font-size: 24px;
+    }
+}
