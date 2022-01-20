@@ -5,12 +5,12 @@ import "./Home.css";
 import Header from "../../components/Header/Header";
 import Sidedrawer from '../../components/SideDrawer/SideDrawer';
 import Footer from "../../components/Footer/Footer";
+
 import imageAddress1 from "../../assets/speakers/elon_musk.png";
 import imageAddress2 from "../../assets/speakers/elon_musk.png";
 import imageAddress3 from "../../assets/speakers/elon_musk.png";
 import imageAddress4 from "../../assets/speakers/elon_musk.png";
 import imageAddress5 from "../../assets/speakers/elon_musk.png";
-
 
 const speakersDB = [
     {
@@ -18,6 +18,7 @@ const speakersDB = [
         name: 'Speaker1',
         image: imageAddress1,
         topic: 'Topic of the talk 1',
+        about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea veritatis, obcaecati ullam dolore corrupti eveniet dolores quisquam nostrum cupiditate",
         synopsis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus at exercitationem aut quia! Distinctio, laboriosam corporis culpa vel accusamus commodi possimus officia error necessitatibus explicabo harum'
     },
     {
@@ -25,6 +26,7 @@ const speakersDB = [
         name: 'Speaker2',
         image: imageAddress2,
         topic: 'Topic of the talk 2',
+        about: "Labore nesciunt modi placeat consequatur praesentium magni sunt pariatur. Libero, dolore consectetur labore voluptatem cupiditate corrupti minima itaque dicta deleniti.",
         synopsis: 'Obcaecati minima? Veniam doloribus impedit eligendi maiores quisquam qui ut, reprehenderit repellat nulla sapiente, necessitatibus corrupti dolore soluta? Fugiat, doloribus. Optio repellat tenetur qui provident'
     },
     {
@@ -32,6 +34,7 @@ const speakersDB = [
         name: 'Speaker3',
         image: imageAddress3,
         topic: 'Topic of the talk 3',
+        about: "Deserunt facilis, assumenda voluptates consequuntur architecto quisquam expedita quasi ad nobis officia recusandae asperiores? Inventore provident ipsum distinctio, iste amet.",
         synopsis: 'Facilis reiciendis expedita consectetur exercitationem. Vel aliquid culpa quo consequatur voluptatem velit modi veniam quas doloremque distinctio tenetur voluptatibus similique aperiam quam ab id laboriosam.'
     },
     {
@@ -39,6 +42,7 @@ const speakersDB = [
         name: 'Speaker4',
         image: imageAddress4,
         topic: 'Topic of the talk 4',
+        about: "Obcaecati dolorum culpa magni cumque laborum est sapiente commodi! Enim dolorem beatae ut quia est explicabo, totam sed commodi similique",
         synopsis: 'Ipsum recusandae inventore. Exercitationem, quidem. Autem provident quia voluptates nemo. Nobis facilis quis a eligendi perferendis magnam tempora aperiam, corrupti placeat possimus accusamus, error nisi'
     },
     {
@@ -46,6 +50,7 @@ const speakersDB = [
         name: 'Speaker5',
         image: imageAddress5,
         topic: 'Topic of the talk 5',
+        about: "Aliquam maxime. Dignissimos, placeat, magnam veritatis voluptate nostrum debitis molestiae in aperiam qui quia reiciendis doloremque eum sunt animi quas.",
         synopsis: 'Ab inventore quibusdam similique officia dolorum neque! Hic obcaecati, error quos id fugit soluta porro enim aliquid. Blanditiis et quasi ad illum exercitationem esse voluptates.'
     }
 ];
