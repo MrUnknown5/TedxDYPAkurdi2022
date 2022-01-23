@@ -1,0 +1,206 @@
+.Speakers {
+    min-height: 100vh;
+    height: auto;
+    color: var(--white-color);
+}
+.Speakers h3 {
+    margin:36px auto;
+    font-size: 50px;
+    font-weight: 1000;
+    font-family: 'Acme', sans-serif;
+    color: dimgrey;
+}
+.Speakers .speakers_grid .speakers_template_card {
+    margin: 60px auto;
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Speakers .speakers_grid .speakers_template_card_reverse {
+    flex-flow: row-reverse;
+}
+
+/* Info */
+
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+    width: 600px;
+    height: 320px;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    padding: 16px 36px 16px 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_name {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_title {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+    color: var(--white-color-tertiary);
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_summary {
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Image */
+
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box {
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 480px;
+    background-color: var(--dark-background-tertiary);
+    border-radius: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box_left {
+    left: 20px;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box_right {
+    left: -20px;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_circle {
+    height: 180px;
+    width: 180px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_background_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 400px;
+    width: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+}
+.Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_background_image_1{
+    background-image: url(../../assets/speakers/elon_musk.png);
+}
+@media (max-width: 900px) {
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+        height: 330px;
+    }
+}
+@media (max-width: 850px) {
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+        height: 340px;
+    }
+}
+@media (max-width: 800px) {
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+        height: 340px;
+    }
+}
+@media (max-width: 750px) {
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+        height: 350px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box {
+        width: 340px;
+        height: 360px;
+    }
+}
+@media (max-width: 700px) {
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+        max-width: 600px;
+        width: auto;
+        min-height: 320px;
+        height: auto;
+        padding: 36px;
+    }
+    .Speakers .speakers_grid .speakers_template_card {
+        flex-direction: column-reverse;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box {
+        top: 120px;
+        right: 120px;
+        margin-left: auto;
+        width: 300px;
+        height: 360px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box_left, 
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box_right {
+        right: 0;
+        left: auto;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_name {
+        font-size: 24px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_title {
+        font-size: 14px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_summary {
+        font-size: 15px;
+    }
+}
+@media (max-width: 550px) {
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box {
+        padding: 140px 36px 36px 36px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 480px) {    
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box {
+        height: 300px;
+        width: 240px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_circle {
+        height: 150px;
+        width: 150px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_background_image {
+        height: 300px;
+        width: 180px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_name {
+        font-size: 20px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_title {
+        font-size: 10px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_summary {
+        font-size: 14px;
+    }
+}
+@media (max-width: 360px) {    
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box {
+        height: 240px;
+        width: 200px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_circle {
+        height: 120px;
+        width: 120px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_image_box .speakers_template_card_image_box_background_image {
+        height: 240px;
+        width: 150px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_name {
+        font-size: 18px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_title {
+        font-size: 10px;
+    }
+    .Speakers .speakers_grid .speakers_template_card .speakers_template_card_info_box .speakers_template_card_info_box_speaker_summary {
+        font-size: 14px;
+    }
+}
